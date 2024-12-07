@@ -6,7 +6,7 @@ import {
   Navigate,
 } from "react-router-dom";
 import './App.css';
-import { Login, Signup, Homepage, Map} from "./components/components";
+import { Login, Signup, Homepage, Map, Store} from "./components/components";
 
 function App() {
   return (
@@ -18,6 +18,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />  
           <Route path="/explore" element={<Map />}/>
+          <Route path="/store/:id" element={<Store />} />
         </Routes>
       </Router>
     </>

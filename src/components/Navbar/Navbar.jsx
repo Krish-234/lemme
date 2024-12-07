@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { logo } from "../../assets/images";
+import { userAppStore } from "../../store";
 
 const Navbar = () => {
+  const { isLogin }  = userAppStore();
+
+
   return (
     <div className="flex justify-between items-center px-[6rem] py-4 bg-white">
       <div className="flex justify-center items-center">
@@ -18,8 +22,15 @@ const Navbar = () => {
           <a href="#">my School</a>
         </div>
       </div>
-      <div>
-        <button>login</button>
+      <div className="flex gap-6">
+      {isLogin ? (
+    <button>Profile</button>  // or use a Profile component
+  ) : (
+    <>
+      <button>Signup</button>
+      <button>Login</button>
+    </>
+  )}
       </div>
     </div>
   );

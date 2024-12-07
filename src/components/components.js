@@ -3,7 +3,8 @@ import Signup from "../pages/Signup";
 import Homepage from "../pages/Homepage";
 import Navbar from "./Navbar/Navbar";
 import Header from "./Header/Header";
-import Map from "./Map/Map"
+import Map from "./Map/Map";
+import Store from "./StoreComp/Store";
 
 export{
     Login,
@@ -11,5 +12,6 @@ export{
     Homepage,
     Navbar,
     Header,
-    Map
+    Map,
+    Store
 }

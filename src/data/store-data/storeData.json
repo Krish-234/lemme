@@ -1,0 +1,232 @@
+{
+    "places": [
+      {
+        "id": "1",
+        "type": "Feature",
+        "properties": {
+          "name": "Gandhinagar Institute of Technology",
+          "category": "College",
+          "city": "Gandhinagar",
+          "state": "Gujarat",
+          "address": "Near Koba Circle, Gandhinagar, Gujarat",
+          "contact": "+91 792 320 4600",
+          "website": "http://www.git.org.in",
+          "latitude": 23.2206,
+          "longitude": 72.6308
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [72.6308, 23.2206]
+        }
+      },
+      {
+        "id": "2",
+        "type": "Feature",
+        "properties": {
+          "name": "D.A.V. Public School",
+          "category": "School",
+          "city": "Gandhinagar",
+          "state": "Gujarat",
+          "address": "Sector 2, Gandhinagar, Gujarat",
+          "contact": "+91 79 232 45100",
+          "website": "http://www.davgandhinagar.org",
+          "latitude": 23.2272,
+          "longitude": 72.6350
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [72.6350, 23.2272]
+        }
+      },
+      {
+        "id": "3",
+        "type": "Feature",
+        "properties": {
+          "name": "Indian Institute of Technology Gandhinagar (IITGN)",
+          "category": "College",
+          "city": "Gandhinagar",
+          "state": "Gujarat",
+          "address": "Palaj, Gandhinagar, Gujarat",
+          "contact": "+91 79 2395 2222",
+          "website": "http://www.iitgn.ac.in",
+          "latitude": 23.2154,
+          "longitude": 72.6640
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [72.6640, 23.2154]
+        }
+      },
+      {
+        "id": "4",
+        "type": "Feature",
+        "properties": {
+          "name": "Ahmedabad University",
+          "category": "College",
+          "city": "Gandhinagar",
+          "state": "Gujarat",
+          "address": "Ahmedabad-Gandhinagar Highway, Gandhinagar, Gujarat",
+          "contact": "+91 79 6191 3200",
+          "website": "http://www.ahduni.edu.in",
+          "latitude": 23.1374,
+          "longitude": 72.6290
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [72.6290, 23.1374]
+        }
+      },
+      {
+        "id": "5",
+        "type": "Feature",
+        "properties": {
+          "name": "Shree Narmada Law College",
+          "category": "College",
+          "city": "Gandhinagar",
+          "state": "Gujarat",
+          "address": "Sector 15, Gandhinagar, Gujarat",
+          "contact": "+91 79 232 45678",
+          "website": "http://www.snlc.edu.in",
+          "latitude": 23.2113,
+          "longitude": 72.6325
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [72.6325, 23.2113]
+        }
+      },
+      {
+        "id": "6",
+        "type": "Feature",
+        "properties": {
+          "name": "Gandhinagar Academy",
+          "category": "School",
+          "city": "Gandhinagar",
+          "state": "Gujarat",
+          "address": "Sector 21, Gandhinagar, Gujarat",
+          "contact": "+91 79 232 33224",
+          "website": "http://www.gandhinagaracademy.org",
+          "latitude": 23.2366,
+          "longitude": 72.6382
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [72.6382, 23.2366]
+        }
+      },
+      {
+        "id": "7",
+        "type": "Feature",
+        "properties": {
+          "name": "Pragati College of Engineering",
+          "category": "College",
+          "city": "Gandhinagar",
+          "state": "Gujarat",
+          "address": "Sector 28, Gandhinagar, Gujarat",
+          "contact": "+91 79 232 49990",
+          "website": "http://www.pragati.edu.in",
+          "latitude": 23.1945,
+          "longitude": 72.6346
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [72.6346, 23.1945]
+        }
+      },
+      {
+        "id": "8",
+        "type": "Feature",
+        "properties": {
+          "name": "Vidyavihar High School",
+          "category": "School",
+          "city": "Gandhinagar",
+          "state": "Gujarat",
+          "address": "Sector 9, Gandhinagar, Gujarat",
+          "contact": "+91 79 232 39933",
+          "website": "http://www.vidyavihar.org",
+          "latitude": 23.2128,
+          "longitude": 72.6304
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [72.6304, 23.2128]
+        }
+      },
+      {
+        "id": "9",
+        "type": "Feature",
+        "properties": {
+          "name": "Swaminarayan Gurukul International School",
+          "category": "School",
+          "city": "Gandhinagar",
+          "state": "Gujarat",
+          "address": "Sector 21, Gandhinagar, Gujarat",
+          "contact": "+91 79 232 21122",
+          "website": "http://www.sgis.org",
+          "latitude": 23.2395,
+          "longitude": 72.6411
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [72.6411, 23.2395]
+        }
+      },
+      {
+        "id": "10",
+        "type": "Feature",
+        "properties": {
+          "name": "Vishwakarma Government Engineering College",
+          "category": "College",
+          "city": "Gandhinagar",
+          "state": "Gujarat",
+          "address": "Sector 26, Gandhinagar, Gujarat",
+          "contact": "+91 79 232 32222",
+          "website": "http://www.vgecg.ac.in",
+          "latitude": 23.2147,
+          "longitude": 72.6386
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [72.6386, 23.2147]
+        }
+      },
+      {
+        "id": "11",
+        "type": "Feature",
+        "properties": {
+          "name": "Gujarat National Law University",
+          "category": "College",
+          "city": "Gandhinagar",
+          "state": "Gujarat",
+          "address": "Koba, Gandhinagar, Gujarat",
+          "contact": "+91 79 232 70400",
+          "website": "http://www.gnlu.ac.in",
+          "latitude": 23.2071,
+          "longitude": 72.6647
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [72.6647, 23.2071]
+        }
+      },
+      {
+        "id": "12",
+        "type": "Feature",
+        "properties": {
+          "name": "BVM Engineering College",
+          "category": "College",
+          "city": "Gandhinagar",
+          "state": "Gujarat",
+          "address": "Sector 10, Gandhinagar, Gujarat",
+          "contact": "+91 79 232 41510",
+          "website": "http://www.bvmengineering.ac.in",
+          "latitude": 23.2176,
+          "longitude": 72.6339
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [72.6339, 23.2176]
+        }
+      }
+    ]
+  }

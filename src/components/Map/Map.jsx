@@ -5,6 +5,9 @@ import markerIcon2x from 'leaflet/dist/images/marker-icon-2x.png';
 import markerIcon from 'leaflet/dist/images/marker-icon.png';
 import markerShadow from 'leaflet/dist/images/marker-shadow.png';
 import 'leaflet/dist/leaflet.css';
+import { useNavigate } from 'react-router-dom';
+import storeData from "../../data/store-data/storeData.json"
+import { storeImg } from '../../assets/images';
 // Default Leaflet icon fix
 
 
@@ -18,40 +21,27 @@ L.Icon.Default.mergeOptions({
 
 const PlacesSearch = () => {
   const [places, setPlaces] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const navigate = useNavigate();
   
 
   useEffect(() => {
-    const fetchPlaces = async () => {
-      try {
-        const response = await fetch(
-          `https://api.geoapify.com/v2/places?categories=education.school,education.college&filter=rect%3A77.068899%2C28.724258%2C77.251703%2C28.526251&limit=20&apiKey=1a2f63e61b1c406796a9863e62a0f933`
-        );
-
-        if (!response.ok) {
-          throw new Error('Failed to fetch places data');
-        }
-
-        const data = await response.json();
-        setPlaces(data.features);
-        setLoading(false);
-      } catch (err) {
-        setError(err.message);
-        setLoading(false);
-      }
+    const fetchPlaces = () => {
+      setPlaces(storeData.places);
     };
 
     fetchPlaces();
   }, []);
+  
+
+  const handleOpenStore = (store) => {
+    navigate(`/store/${store.id}`, {state: {store}});
+  }
 
   return (
     <div>
       <h1>Nearby Schools and Colleges</h1>
-      {loading && <p>Loading...</p>}
-      {error && <p>Error: {error}</p>}
-      {!loading && !error && (
-     <MapContainer center={[28.6139, 77.209]} zoom={12} className="w-full h-[500px] md:h-[600px] lg:h-[700px]" >
+     
+     <MapContainer center={[23.237560, 72.647781]} zoom={12} className="w-full h-[500px] md:h-[600px] lg:h-[700px]" >
 
           <TileLayer
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -66,13 +56,20 @@ const PlacesSearch = () => {
               ]}
             >
               <Popup>
-                <h2 className='cursor-pointer' onClick={() => {}}>{place.properties.name}</h2>
-                <p>{place.properties.city}, {place.properties.state}</p>
+                <div className='flex w-[20rem] items-center gap-10'>
+                  <div>
+                <img src={storeImg} alt="err" className='max-w-[4rem] cursor-pointer' onClick={() => {handleOpenStore(place)}}/>
+                  </div>
+                <div>
+                <h1 className='cursor-pointer mb-2 text-lg' onClick={() => {handleOpenStore(place)}}>{place.properties.name}</h1>
+                <button className='px-4 py-2 bg-blue-400 rounded-md'>add to libarary</button>
+                </div>
+                </div>
               </Popup>
             </Marker>
           ))}
         </MapContainer>
-      )}
+      
     </div>
   );
 };
